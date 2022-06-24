@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -209,146 +210,38 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_home_background" />
 
-        <HorizontalScrollView
-            android:id="@+id/hs_home_today_music_view"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_home_today_music_album"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tv_home_today_music_total"
+            tools:listitem="@layout/item_album" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp_home_banner"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_home_today_music_album" />
+
+        <TextView
+            android:id="@+id/tv_home_daily_music_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:overScrollMode="never"
-            android:scrollbars="none"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_home_today_music_oversea">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:orientation="vertical">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <ImageView
-                            android:id="@+id/iv_home_album_img1"
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/img_jangbumjun_gobak"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="5dp"
-                            android:src="@drawable/widget_black_play"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="고백"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="장범준"
-                        android:textColor="#a8a8a8"
-                        android:textSize="13sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/img_10cm_goback" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="고백"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="10cm"
-                        android:textColor="#a8a8a8"
-                        android:textSize="13sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/img_melomance_goback" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="고백"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="멜로망스"
-                        android:textColor="#a8a8a8"
-                        android:textSize="13sp" />
-
-                </LinearLayout>
-            </LinearLayout>
-        </HorizontalScrollView>
-
-        <ImageView
-            android:id="@+id/iv_home_banner"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/img_home_viewpager_exp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="매일 들어도 좋은 OST 음악"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/hs_home_today_music_view" />
+            app:layout_constraintTop_toBottomOf="@id/vp_home_banner" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
