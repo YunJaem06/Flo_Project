@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_item_ost_cover_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_home_daily_music_ost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_sondia_adult" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/iv_item_ost_play_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/widget_black_play"
+        app:layout_constraintBottom_toBottomOf="@id/cv_item_ost_cover_img"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_ost_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="어른"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/cv_item_ost_cover_img"
+        app:layout_constraintTop_toBottomOf="@id/cv_item_ost_cover_img" />
+
+    <TextView
+        android:id="@+id/tv_item_ost_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Sondia"
+        android:textColor="#a8a8a8"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/cv_item_ost_cover_img"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_ost_title" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
