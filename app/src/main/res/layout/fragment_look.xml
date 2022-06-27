@@ -1,18 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LookFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="look"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv_look_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="둘러보기"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:id="@+id/hs_look_chip_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingStart="20dp"
+            android:scrollbars="none"
+            app:layout_constraintTop_toBottomOf="@id/tv_look_title">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_look_chip_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/look_chip_on_background"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="8dp"
+                    android:text="차트"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_look_chip_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/look_chip_off_background"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="8dp"
+                    android:text="영상"
+                    android:textColor="#7D7D7D" />
+
+                <TextView
+                    android:id="@+id/tv_look_chip_title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/look_chip_off_background"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="8dp"
+                    android:text="장르"
+                    android:textColor="#7D7D7D" />
+
+                <TextView
+                    android:id="@+id/tv_look_chip_title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/look_chip_off_background"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="8dp"
+                    android:text="상황"
+                    android:textColor="#7D7D7D" />
+
+                <TextView
+                    android:id="@+id/tv_look_chip_title5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/look_chip_off_background"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="8dp"
+                    android:text="분위기"
+                    android:textColor="#7D7D7D" />
+
+                <TextView
+                    android:id="@+id/tv_look_chip_title6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/look_chip_off_background"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="8dp"
+                    android:text="오디오"
+                    android:textColor="#7D7D7D" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv_look_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="차트"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hs_look_chip_scroll" />
+
+        <ImageView
+            android:id="@+id/iv_look_sub_tile"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/btn_main_arrow_more"
+            app:layout_constraintBottom_toBottomOf="@id/tv_look_sub_title"
+            app:layout_constraintStart_toEndOf="@id/tv_look_sub_title"
+            app:layout_constraintTop_toTopOf="@id/tv_look_sub_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
