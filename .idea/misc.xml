@@ -5,6 +5,10 @@
       <map>
         <entry key="..\:/Users/yunja/AndroidStudioProjects/Flo_Project/app/src/main/res/drawable/btm_color_selector.xml" value="0.209" />
         <entry key="..\:/Users/yunja/AndroidStudioProjects/Flo_Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.209" />
+        <entry key="..\:/Users/yunja/AndroidStudioProjects/Flo_Project/app/src/main/res/drawable/selector_home_icon.xml" value="0.2075" />
+        <entry key="..\:/Users/yunja/AndroidStudioProjects/Flo_Project/app/src/main/res/drawable/selector_locker_icon.xml" value="0.2075" />
+        <entry key="..\:/Users/yunja/AndroidStudioProjects/Flo_Project/app/src/main/res/drawable/selector_look_icon.xml" value="0.2075" />
+        <entry key="..\:/Users/yunja/AndroidStudioProjects/Flo_Project/app/src/main/res/drawable/selector_search_icon.xml" value="0.2075" />
         <entry key="..\:/Users/yunja/AndroidStudioProjects/Flo_Project/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/yunja/AndroidStudioProjects/Flo_Project/app/src/main/res/layout/fragment_home.xml" value="0.34937888198757766" />
         <entry key="..\:/Users/yunja/AndroidStudioProjects/Flo_Project/app/src/main/res/layout/fragment_locker.xml" value="0.36614583333333334" />
