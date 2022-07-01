@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_album_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_arrow_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_album_more"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_player_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_album_like"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ic_my_like_off"
+        app:layout_constraintBottom_toBottomOf="@id/iv_album_more"
+        app:layout_constraintEnd_toStartOf="@id/iv_album_more"
+        app:layout_constraintTop_toTopOf="@id/iv_album_more" />
+
+    <TextView
+        android:id="@+id/tv_album_music_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="첫 번째 '고백'"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_album_back" />
+
+    <TextView
+        android:id="@+id/tv_album_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="장범준"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_album_music_title"
+        app:layout_constraintStart_toStartOf="@id/tv_album_music_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_album_music_title" />
+
+    <TextView
+        android:id="@+id/tv_album_music_title_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="2021.07.19 | 정규 | 록/메탈"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_album_singer"
+        app:layout_constraintStart_toStartOf="@id/tv_album_singer"
+        app:layout_constraintTop_toBottomOf="@id/tv_album_singer" />
+
+    <ImageView
+        android:id="@+id/iv_album_album"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_jangbumjun_gobak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_album_music_title_info" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/widget_black_play"
+        app:layout_constraintBottom_toBottomOf="@id/iv_album_album"
+        app:layout_constraintEnd_toEndOf="@id/iv_album_album" />
+
+    <ImageView
+        android:id="@+id/iv_album_lp"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_marginStart="155dp"
+        android:src="@drawable/img_album_lp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_album_album"
+        app:layout_constraintStart_toStartOf="@id/iv_album_album"
+        app:layout_constraintTop_toTopOf="@id/iv_album_album" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
