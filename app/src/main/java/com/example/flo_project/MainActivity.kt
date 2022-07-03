@@ -1,5 +1,6 @@
 package com.example.flo_project
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.findNavController
@@ -20,6 +21,11 @@ class MainActivity : AppCompatActivity() {
         val navController = supportFragmentManager.findFragmentById(R.id.container_main)?.findNavController()
         navController?.let {
             bottomNavigationView.setupWithNavController(it)
+        }
+
+        binding.clMainPlayer.setOnClickListener {
+            val intent = Intent(this, SongActivity::class.java)
+            startActivity(intent)
         }
     }
 }
