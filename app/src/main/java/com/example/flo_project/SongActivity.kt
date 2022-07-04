@@ -23,6 +23,10 @@ class SongActivity : AppCompatActivity() {
         binding.ivSongPause.setOnClickListener {
             setPlayerStatus(true)
         }
+        if (intent.hasExtra("title") && intent.hasExtra("singer")){
+            binding.tvSongMusicTitle.text=intent.getStringExtra("title")
+            binding.tvSongMusicSinger.text=intent.getStringExtra("singer")
+        }
     }
 
     fun setPlayerStatus(isPlaying : Boolean){
