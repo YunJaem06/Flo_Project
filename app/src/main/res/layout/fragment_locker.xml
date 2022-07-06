@@ -1,18 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LockerFragment">
+
+    <TextView
+        android:id="@+id/tv_locker_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="55dp"
+        android:text="보관환"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_locker_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="로그인"
+        android:textColor="@color/song_player"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_locker_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_locker_title" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_locker_content"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_locker_title"
+        app:tabIndicatorColor="@color/flo"
+        app:tabIndicatorFullWidth="false"
+        app:tabRippleColor="#00ff0000"
+        app:tabSelectedTextColor="@color/flo" />
+
+    <ImageView
+        android:id="@+id/iv_locker_select_all"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/btn_playlist_select_off"
+        app:layout_constraintStart_toStartOf="@id/tl_locker_content"
+        app:layout_constraintTop_toBottomOf="@id/tl_locker_content" />
+
+    <TextView
+        android:id="@+id/tv_locker_select_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전체선택"
+        android:textColor="@color/colorPrimaryGrey"
+        app:layout_constraintBottom_toBottomOf="@id/iv_locker_select_all"
+        app:layout_constraintStart_toEndOf="@id/iv_locker_select_all"
+        app:layout_constraintTop_toTopOf="@id/iv_locker_select_all" />
+
+    <ImageView
+        android:id="@+id/iv_locker_play_all"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_browse_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@id/iv_locker_select_all"
+        app:layout_constraintStart_toEndOf="@id/tv_locker_select_all"
+        app:layout_constraintTop_toTopOf="@id/iv_locker_select_all" />
+
+    <TextView
+        android:id="@+id/tv_locker_play_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전체듣기"
+        android:textColor="@color/colorPrimaryGrey"
+        app:layout_constraintBottom_toBottomOf="@id/iv_locker_select_all"
+        app:layout_constraintStart_toEndOf="@id/iv_locker_play_all"
+        app:layout_constraintTop_toTopOf="@id/iv_locker_select_all" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="locker"
+        android:layout_marginEnd="20dp"
+        android:text="편집"
+        android:textColor="@color/colorPrimaryGrey"
+        app:layout_constraintBottom_toBottomOf="@id/iv_locker_select_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_locker_select_all" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_locker_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/iv_locker_select_all" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
