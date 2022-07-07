@@ -41,7 +41,7 @@
                 android:id="@+id/tv_main_player_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="고백"
+                android:text="@string/sing_title_goback"
                 android:textColor="@color/black"
                 android:textSize="13sp"/>
 
@@ -49,7 +49,7 @@
                 android:id="@+id/tv_main_player_singer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="장범준"
+                android:text="@string/singer_Jangbumjun"
                 android:textSize="12sp"/>
 
         </LinearLayout>

@@ -1,5 +1,61 @@
 <resources>
     <string name="app_name">Flo_Project</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    // sing profile
+    <string name="sing_title_goback">고백</string>
+    <string name="singer_Jangbumjun">장범준</string>
+    <string name="sing_title_bol4_seoul">Seoul</string>
+    <string name="singer_bol4">볼빨간 사춘기</string>
+    <string name="sing_title_emuzin_sin">신호등</string>
+    <string name="singer_emuzin">이무진</string>
+    <string name="singer_10cm">10cm</string>
+    <string name="singer_melomance">멜로망스</string>
+    <string name="singer_urbanzakapa">어반자카파</string>
+    <string name="singer_shinyongjae">신용재</string>
+
+    // home
+    <string name="home_title_text">포근하게 덮어주는 꿈의\n목소리</string>
+    <string name="home_album_information">총 2곡 2022.06.16</string>
+    <string name="home_today_music_title">오늘 발매 음악</string>
+    <string name="home_today_music_total">종합</string>
+    <string name="home_today_music_domestic">국내</string>
+    <string name="home_today_music_oversea">해외</string>
+    <string name="home_daily_music_title">매일 들어도 좋은 OST 음악</string>
+    <string name="home_video_music_title">비디오 콜래션</string>
+    <string name="home_ceo_infomation">(주)드림어스컴퍼니 ALL RIGHTS RESERVED</string>
+
+    //album
+    <string name="album_music_title">첫 번째 \'고백\'</string>
+    <string name="album_music_title_information">2021.07.19 | 정규 | 록/메탈</string>
+    <string name="album_song_mix">내 취향 MIX</string>
+    <string name="album_song_list_title">TITLE</string>
+
+
+
+    //locker
+    <string name="locker_title">보관환</string>
+    <string name="locker_login">로그인</string>
+    <string name="select_all">전체선택</string>
+    <string name="play_all">전체듣기</string>
+    <string name="locker_edit">편집</string>
+
+    //song
+    <string name="song_music_lyrics1">말해야 하는데 네 앞에 서면</string>
+    <string name="song_music_lyrics2">아무 말 못하는 내가 미워져</string>
+
+    //look
+    <string name="look_title">둘러보기</string>
+    <string name="look_chip_title1">차트</string>
+    <string name="look_chip_title2">영상</string>
+    <string name="look_chip_title3">장르</string>
+    <string name="look_chip_title4">상황</string>
+    <string name="look_chip_title5">분위기</string>
+    <string name="look_chip_title6">오디오</string>
+    <string name="look_chart_title">FLO 차트</string>
+    <string name="look_chart_title_time">19시 기준</string>
+    <string name="look_chart_sub_title">최근 24시간 집계, FLO 최고 인기곡 차트!</string>
+
+
+
 </resources>
