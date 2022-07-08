@@ -23,12 +23,15 @@ class MainActivity : AppCompatActivity() {
             bottomNavigationView.setupWithNavController(it)
         }
 
-        val song = Song(binding.tvMainPlayerTitle.text.toString(), binding.tvMainPlayerSinger.text.toString())
+        val song = Song(binding.tvMainPlayerTitle.text.toString(), binding.tvMainPlayerSinger.text.toString(), 0, 60, false)
 
         binding.clMainPlayer.setOnClickListener {
             val intent = Intent(this, SongActivity::class.java)
             intent.putExtra("title", song.title)
             intent.putExtra("singer",song.signer)
+            intent.putExtra("second",song.second)
+            intent.putExtra("playTime",song.playTime)
+            intent.putExtra("isPlaying",song.isPlaying)
             startActivity(intent)
         }
     }
